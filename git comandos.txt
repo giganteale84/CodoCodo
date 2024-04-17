@@ -1,0 +1,9 @@
+git start: inicializa una carpeta como carpeta de trabajo
+
+git status: avisa el seguimiento de los archivos
+
+git add . todos los archivos para rastrear
+
+ctrl + L limpia la pantalla
+
+git commit -m "comentario de cambios"

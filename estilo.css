@@ -1,0 +1,101 @@
+@keyframes cambiarColor
+{ from
+	{
+		background-color:red;
+	}
+	to
+	{
+		background-color:yellow;
+	}
+}
+@keyframes cambio2 {
+	0% { font-size: 10px;}
+	30% {font-size: 14px;
+	background-color: green;}
+	60% {font-size: 10px;
+		background-color: beige;}
+	90% {
+		font-size: 14px;
+		background-color: rgb(140, 140, 65);}
+	
+	100% {
+	font-size: 10px;
+	background-color: blue;
+	}
+	
+	
+}
+@keyframes cuadro {
+	0% {
+		transform: rotate(10deg);
+	}
+	40% {
+		transform: rotate(70deg);
+	}
+	90% {
+		transform: rotate(160deg);
+	}
+
+	
+}
+*{
+    box-sizing: border-box;
+	animation-name: cambio2;
+	animation-duration: 3s;
+	animation-delay: 2s;
+}
+
+table:hover{
+	animation-name: cuadro;
+	animation-duration: 3s;
+	animation-delay: 1ms;
+	gap:3px; /* espacio por fuera entre elementos, opuesto al padding */
+	justify-content:center; /* Eje x*/
+	align-content:center; /* Eje Y */
+	place-content: center; /* pisa los dos anteriores */ 
+}
+table:not(:hover)
+{
+	animation-name: cambiarColor;
+	animation-duration: 3s;
+	animation-delay: 1ms;
+}
+@media screen and (max-width: 767px)
+{
+	.pst{
+		font-size: 1vb;
+	}
+	
+	.receta-grid
+	{
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(4,1fr);
+	}
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+	.pst{
+		font-size: 3vb;
+	}
+	
+	.receta-grid
+	{
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(4,1fr);
+	}
+
+}
+@media screen and (min-width: 1025px)
+{
+	.pst{
+		font-size: 5vb;
+	}
+	
+	.receta-grid
+	{
+	grid-template-columns: repeat(2,1fr);
+	grid-template-rows: repeat(4,1fr);
+	}
+
+}
