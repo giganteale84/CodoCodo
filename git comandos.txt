@@ -7,3 +7,5 @@ git add . todos los archivos para rastrear
 ctrl + L limpia la pantalla
 
 git commit -m "comentario de cambios"
+
+git config --global user.email "tu@ejemplo.com"
